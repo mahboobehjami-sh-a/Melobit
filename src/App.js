@@ -1,7 +1,9 @@
 import './css/App.css';
+import './css/CustomizeStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect } from 'react'
-import Carousel from "./partialcomponents/Carousel";
+import SliderHead from "./partialcomponents/SliderHead";
+
 
 export default function App() {
 
@@ -12,7 +14,7 @@ export default function App() {
   return (
 
     <div className="App">
-      <Carousel />
+      <SliderHead />
 
     </div>
   );
