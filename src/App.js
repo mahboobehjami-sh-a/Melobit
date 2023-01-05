@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { useState, useEffect } from 'react'
+import Carousel from "./partialcomponents/Carousel";
 
-function App() {
+export default function App() {
+
+  useEffect(() => {
+
+  })
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <Carousel />
+
     </div>
   );
 }
-
-export default App;
