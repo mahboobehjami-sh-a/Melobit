@@ -1,8 +1,13 @@
 import './css/App.css';
 import './css/CustomizeStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
+
 import SliderHead from "./partialcomponents/SliderHead";
+import NavbarHead from "./partialcomponents/Navbar";
+import TopTrendingArtist from "./partialcomponents/TopTrendingArtist";
+import TopWeekSong from "./partialcomponents/TopWeekSong";
+import TopDaySong from "./partialcomponents/TopDaySong";
 
 
 export default function App() {
@@ -14,7 +19,11 @@ export default function App() {
   return (
 
     <div className="App">
-      <SliderHead />
+      <NavbarHead />
+      {/* <SliderHead />
+      <TopTrendingArtist />
+      <TopWeekSong /> */}
+      <TopDaySong />
 
     </div>
   );

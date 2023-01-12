@@ -20,7 +20,6 @@ function SliderHead() {
             })
     }
     showSlider()
-    // console.log(sliders)
 
 
 
