@@ -1,6 +1,6 @@
-html {
+/* html {
     overflow: hidden;
-}
+} */
 
 ::-webkit-scrollbar {
     width: 0;
@@ -14,6 +14,11 @@ html {
     background: transparent;
     width: 10%;
     height: 10%;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
 }
 
 /* for carousel */
@@ -71,13 +76,6 @@ html {
     height: 64px;
 }
 
-/* .nav-link{
-    color: white;
-} */
-/* .activee {
-    border-bottom: 5px;
-    border-bottom: #FF0057;
-} */
 
 .melobit-text {
     width: 120px;
@@ -131,20 +129,33 @@ html {
     width: 50%;
 }
 
-/* for trending artist */
-/* .scrolling-wrapper {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;
-} */
 
-.img-holder {
+
+.img-holder-trending-artist {
     /* display: inline-block; */
     width: 250px;
     height: 250px;
 }
 
-/* .wrap-y-disable{
-overflow-x: scroll;
-overflow-y: hidden;
-} */
+.img-holder-latest-song {
+    /* display: inline-block; */
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.text-title {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-left: 50px;
+    display: inline;
+    position: absolute;
+    z-index: 3;
+}
+
+.figure {
+    /* display: inline; */
+    width: 400px;
+    height: 430px;
+}
