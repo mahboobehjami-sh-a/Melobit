@@ -1,5 +1,11 @@
+ @font-face {
+   font-family: 'Kodchasan';
+   src: url('../fonts/Kodchasan-ExtraLight.ttf');
+   src: url('../fonts/Kodchasan-Light.ttf');
+ }
+
  .App {
    background: #001534;
    min-height: 100vh;
+   font-family: 'Kodchasan';
  }
-
