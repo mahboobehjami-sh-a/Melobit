@@ -33,7 +33,7 @@ function LatestSong() {
                         songs.map((song, i) => (
                             <figure className="figure figure-latest-song">
                                 <img
-                                    className=" mt-5 p-5 pb-2 figure-img img-fluid rounded"
+                                    className=" mt-5  figure-img img-fluid rounded-img"
                                     key={i}
                                     src={song.album.image.cover.url}
                                     alt={song.album.name} />

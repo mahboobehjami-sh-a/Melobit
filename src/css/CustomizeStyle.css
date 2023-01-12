@@ -141,13 +141,13 @@
     /* display: inline-block; */
     width: 400px;
     height: 400px;
-    border-radius: 20px;
 }
 
 .text-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    padding-top: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     /* padding-left: 50px; */
     display: inline;
     position: absolute;
@@ -158,11 +158,15 @@
 .figure-latest-song {
     /* display: inline; */
     width: 400px;
-    height: 430px;
+    height: 460px;
 }
 
 .figure-top-day-song {
     /* display: inline; */
     width: 200px;
     height: 280px;
+}
+
+.rounded-img {
+    border-radius: 20px !important;
 }

@@ -30,7 +30,7 @@ function TopDaySong() {
                         songs.map((song, i) => (
                             <figure className="figure figure-top-day-song ">
                                 <img
-                                    className=" mt-5 p-2 pb-2 figure-img img-fluid rounded"
+                                    className=" mt-5 p-2 pb-2 figure-img img-fluid rounded-img"
                                     key={i}
                                     src={song.album.image.cover.url}
                                     alt={song.album.name} />

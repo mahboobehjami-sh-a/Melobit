@@ -19,12 +19,12 @@ export default function App() {
   return (
 
     <div className="App">
-      {/* <NavbarHead />
-      <SliderHead />
+      <NavbarHead />
+      {/* <SliderHead />
       <TopTrendingArtist />
-      <LatestSong /> */}
+      <LatestSong />
       <TopDaySong />
-      <TopWeekSong />
+      <TopWeekSong /> */}
 
 
     </div>
