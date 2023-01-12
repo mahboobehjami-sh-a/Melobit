@@ -9,16 +9,6 @@ function TopWeekSong() {
     useEffect(() => {
     })
 
-    // const showArtists = async () => {
-    //     var resultArtists = await fetch('https://api-beta.melobit.com/v1/artist/trending/0/4')
-    //         .then(Response =>
-    //             Response.json())
-    //         .then(data => {
-    //             setArtists(data.results)
-    //         })
-    // }
-    // setArtists()
-
     const showTopWeekSong = async () => {
         var resultTopWeekSong = await fetch('https://api-beta.melobit.com/v1/song/top/week/0/100')
             .then(Response =>
@@ -40,7 +30,7 @@ function TopWeekSong() {
                             className='col-1'
                             key={i}
                             src={song.album.image.cover_small.url}
-                            alt="song"
+                            alt={song.album.name}
                         />
                     ))
                 }

@@ -9,16 +9,6 @@ function TopTrendingArtist() {
     useEffect(() => {
     })
 
-    // const showArtists = async () => {
-    //     var resultArtists = await fetch('https://api-beta.melobit.com/v1/artist/trending/0/4')
-    //         .then(Response =>
-    //             Response.json())
-    //         .then(data => {
-    //             setArtists(data.results)
-    //         })
-    // }
-    // setArtists()
-
     const showTrendingArtist = async () => {
         var resultTrendingArtist = await fetch('https://api-beta.melobit.com/v1/artist/trending/0/4')
             .then(Response =>
@@ -40,7 +30,8 @@ function TopTrendingArtist() {
                             className='col-1'
                             key={i}
                             src={artist.image.cover_small.url}
-                            alt="artist"
+                            alt={artist.fullName}
+
                         />
                     ))
                 }
