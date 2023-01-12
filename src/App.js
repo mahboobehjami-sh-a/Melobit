@@ -1,5 +1,4 @@
 import './css/App.css';
-import './css/CustomizeStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useState, useEffect } from 'react'
 
@@ -21,12 +20,11 @@ export default function App() {
 
     <div className="App">
       <NavbarHead />
-      {/* <SliderHead />
+      <SliderHead />
+      {/* <LatestSong /> */}
       <TopTrendingArtist />
-      <TopWeekSong /> */}
-      {/* <TopDaySong />
-      <br/>
-      <LatestSong /> */}
+      {/* <TopDaySong /> */}
+      {/* <TopWeekSong /> */}
 
     </div>
   );

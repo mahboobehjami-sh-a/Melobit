@@ -21,8 +21,8 @@ function TopDaySong() {
 
 
     return (
-        <Container>
-            <Row className="justify-content-lg-center flex">
+        <div className='container horizontal-scrollable'>
+            <Row className=" justify-content-lg-center flex ">
 
                 {
                     songs.map((song, i) => (
@@ -36,7 +36,7 @@ function TopDaySong() {
                 }
 
             </Row>
-        </Container>
+        </div>
     );
 }
 
