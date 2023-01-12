@@ -1,3 +1,21 @@
+html {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    width: 10%;
+    height: 10%;
+}
+
 /* for carousel */
 .carousel-img {
     border-radius: 20px;
@@ -78,12 +96,24 @@
 
 .bg-cards-darkblue {
     background: linear-gradient(95.98deg, rgba(198, 190, 183, 0) 2.92%, rgba(0, 0, 0, 0) 2.93%, rgba(0, 0, 0, 0.17) 49.73%, rgba(16, 16, 16, 0.1) 101.99%);
+    max-height: 255px;
+
+}
+
+.shape-back {
+    height: 256px;
+    float: left;
+    width: 380px;
+    position: relative;
+    z-index: 3;
 }
 
 .shape {
     height: 256px;
     float: left;
     width: 380px;
+    position: absolute;
+    z-index: 3;
 }
 
 .text-pink {
@@ -96,17 +126,25 @@
     z-index: 3;
     font-size: 42px;
     align-items: center;
-    margin-left: 40px;
+    left: 60px;
     margin-top: 20px;
+    width: 50%;
 }
 
 /* for trending artist */
-.scrolling-wrapper {
+/* .scrolling-wrapper {
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
-}
+} */
 
 .img-holder {
-    display: inline-block;
+    /* display: inline-block; */
+    width: 250px;
+    height: 250px;
 }
+
+/* .wrap-y-disable{
+overflow-x: scroll;
+overflow-y: hidden;
+} */

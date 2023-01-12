@@ -23,16 +23,20 @@ function TopTrendingArtist() {
 
     return (
         <div className='container-fluid'>
-            <Row className="bg-cards-darkblue justify-content-between flex wrap-touch mt-5">
+            <Row className="bg-cards-darkblue justify-content-between flex flex-nowrap overflow-scroll mt-5 w-100">
 
+                <div
+                    className='shape-back'
+                />
                 <img src={shape}
                     className='shape'
                 />
                 <div className='text-show-top text-light'>Top<br />Trending<br /> <span className='text-pink'>Artist</span></div>
+
                 {
                     artists.map((artist, i) => (
                         <img
-                            className='col-2 img-holder  rounded-circle'
+                            className='col-2 img-holder p-4  rounded-circle'
                             key={i}
                             src={artist.image.cover_small.url}
                             alt={artist.fullName}
