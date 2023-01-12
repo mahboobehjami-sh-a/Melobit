@@ -13,7 +13,6 @@
 
 /* for listen now button */
 .listen-now {
-    /* position: absolute; */
     width: 200px;
     height: 50px;
     padding: 5px;
@@ -46,4 +45,20 @@
     display: flex;
     justify-content: flex-end;
 
+}
+
+/* for navbar */
+.melobit-icon {
+    width: 60px;
+    height: 64px;
+}
+
+.melobit-text {
+    width: 120px;
+    height: 77px;
+}
+
+/* for card bg */
+.bg-cards{
+    background: linear-gradient(90.36deg, #161D35 2.78%, #33325B 97.36%);
 }
