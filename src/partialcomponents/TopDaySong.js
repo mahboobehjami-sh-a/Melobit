@@ -35,7 +35,7 @@ function TopDaySong() {
                                     src={song.album.image.cover.url}
                                     alt={song.album.name} />
                                 <figcaption className='figure-caption text-center text-light'>{song.album.name}</figcaption>
-                                <figcaption className='figure-caption text-center text-light'>{song.album.artists[0].fullName}</figcaption>
+                                <figcaption className='figure-caption text-center text-secondary'>{song.album.artists[0].fullName}</figcaption>
                             </figure>
                         ))
                     }

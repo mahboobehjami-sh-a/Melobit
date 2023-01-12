@@ -21,7 +21,7 @@ function TopWeekSong() {
 
 
     return (
-        <div className='container-fluid m-0 p-0 bg-cards'>
+        <div className='container-fluid m-0 p-0 bg-cards space-bottom'>
             <Container>
                 <Row className=" justify-content-between flex flex-nowrap overflow-scroll mt-5 w-100">
                     <div className=' text-light text-title'>Top 10 Week Song</div>
@@ -35,7 +35,7 @@ function TopWeekSong() {
                                     src={song.album.image.cover.url}
                                     alt={song.album.name} />
                                 <figcaption className='figure-caption text-center text-light'>{song.album.name}</figcaption>
-                                <figcaption className='figure-caption text-center text-light'>{song.album.artists[0].fullName}</figcaption>
+                                <figcaption className='figure-caption text-center text-secondary'>{song.album.artists[0].fullName}</figcaption>
                             </figure>
                         ))
                     }

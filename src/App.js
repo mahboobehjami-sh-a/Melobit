@@ -1,5 +1,6 @@
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './css/Player.css';
 import React, { useState, useEffect } from 'react'
 
 import SliderHead from "./partialcomponents/SliderHead";
@@ -8,6 +9,7 @@ import TopTrendingArtist from "./partialcomponents/TopTrendingArtist";
 import TopWeekSong from "./partialcomponents/TopWeekSong";
 import TopDaySong from "./partialcomponents/TopDaySong";
 import LatestSong from "./partialcomponents/LatestSong";
+import Player from "./partialcomponents/Player";
 
 
 export default function App() {
@@ -25,7 +27,7 @@ export default function App() {
       <LatestSong />
       <TopDaySong />
       <TopWeekSong /> */}
-
+      <Player />
 
     </div>
   );

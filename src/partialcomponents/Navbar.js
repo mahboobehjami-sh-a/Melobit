@@ -2,6 +2,8 @@ import '../css/CustomizeStyle.css';
 import React, { useState, useEffect } from 'react'
 import melobit from '../images/melobit.svg'
 import melobitlogo from '../images/melobitlogo.svg'
+import { AiOutlineSearch } from "react-icons/ai";
+
 
 function NavbarHead() {
     return (
@@ -17,26 +19,26 @@ function NavbarHead() {
             <div className="navbar-collapse collapse w-100" id="collapsingNavbar3">
 
                 <ul className="navbar-nav w-100 justify-content-center">
-                    <li className="nav-item activee ">
+                    <li className="nav-item  ">
                         <a className="nav-link text-light font-weight-bold " href="#">Home</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link text-light font-weight-bold" href="#">Playlist</a>
+                    <li className="nav-item" >
+                        <a className="nav-link text-secondary font-weight-bold disabled" href="#" aria-disabled>Playlist</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light font-weight-bold"  href="#">Favorite</a>
+                        <a className="nav-link text-secondary font-weight-bold disabled" href="#" aria-disabled>Favorite</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light font-weight-bold" href="#">History</a>
+                        <a className="nav-link text-secondary font-weight-bold disabled" href="#" aria-disabled>History</a>
                     </li>
                 </ul>
 
-                <ul className="nav navbar-nav ml-auto w-100 justify-content-end">
+                <ul className="nav navbar-nav ml-auto w-100 justify-content-end ">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Right</a>
+                        <AiOutlineSearch className='text-light search-icon' />
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Right</a>
+                        <button className='text-light login-btn' >Login</button>
                     </li>
                 </ul>
             </div>

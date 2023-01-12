@@ -1,6 +1,13 @@
-/* html {
-    overflow: hidden;
-} */
+body {
+    background-color: #001534;
+    /* overflow: hidden; */
+}
+
+@font-face {
+    font-family: 'Kodchasan';
+    src: url('../fonts/Kodchasan-ExtraLight.ttf');
+    src: url('../fonts/Kodchasan-Light.ttf');
+}
 
 ::-webkit-scrollbar {
     width: 0;
@@ -98,6 +105,10 @@
 
 }
 
+.nav-link {
+    font-family: 'Kodchasan';
+}
+
 .shape-back {
     height: 256px;
     float: left;
@@ -116,6 +127,7 @@
 
 .text-pink {
     color: #FF0057;
+    font-family: 'Kodchasan';
 }
 
 .text-show-top {
@@ -127,6 +139,7 @@
     left: 60px;
     margin-top: 20px;
     width: 50%;
+    font-family: 'Kodchasan';
 }
 
 
@@ -153,6 +166,7 @@
     position: absolute;
     z-index: 3;
     width: 500px;
+    font-family: 'Kodchasan';
 }
 
 .figure-latest-song {
@@ -167,6 +181,30 @@
     height: 280px;
 }
 
+.space-bottom {
+    margin-bottom: 140px !important;
+}
+
 .rounded-img {
     border-radius: 20px !important;
+}
+
+.search-icon {
+    margin-left: 50px;
+    font-size: 3rem;
+}
+
+.login-btn {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    background-color: #FF0057;
+    font-family: 'Kodchasan';
+}
+
+figcaption {
+    font-family: 'Roboto';
 }
