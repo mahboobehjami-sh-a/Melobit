@@ -22,8 +22,8 @@ export default function App() {
 
     <div className="App">
       <NavbarHead />
-      {/* <SliderHead />
-      <TopTrendingArtist />
+      <SliderHead />
+      {/*<TopTrendingArtist />
       <LatestSong />
       <TopDaySong />
       <TopWeekSong /> */}

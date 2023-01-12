@@ -65,6 +65,8 @@ body {
     border-radius: 50%;
     background-color: #FF0057;
     padding: 9px;
+    width: 40px;
+    height: 40px;
     filter: drop-shadow(0, 4, 4, 3);
     box-shadow: 1px 1px 5px white inset;
 }
@@ -192,6 +194,10 @@ body {
 .search-icon {
     margin-left: 50px;
     font-size: 3rem;
+}
+
+.icon-size {
+    font-size: 1.25rem;
 }
 
 .login-btn {
