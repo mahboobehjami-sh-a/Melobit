@@ -8,6 +8,7 @@ import NavbarHead from "./partialcomponents/Navbar";
 import TopTrendingArtist from "./partialcomponents/TopTrendingArtist";
 import TopWeekSong from "./partialcomponents/TopWeekSong";
 import TopDaySong from "./partialcomponents/TopDaySong";
+import LatestSong from "./partialcomponents/LatestSong";
 
 
 export default function App() {
@@ -23,7 +24,9 @@ export default function App() {
       {/* <SliderHead />
       <TopTrendingArtist />
       <TopWeekSong /> */}
-      <TopDaySong />
+      {/* <TopDaySong />
+      <br/>
+      <LatestSong /> */}
 
     </div>
   );

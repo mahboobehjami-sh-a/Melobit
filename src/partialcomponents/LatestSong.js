@@ -14,7 +14,7 @@ function LatestSong() {
             .then(Response =>
                 Response.json())
             .then(data => {
-                setLatestSongs(data.results)
+                setSongs(data.results)
             })
     }
     showLatestSong()
