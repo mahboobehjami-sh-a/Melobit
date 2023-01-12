@@ -33,9 +33,8 @@ function TopTrendingArtist() {
                         <img
                             className='col-2 img-holder-trending-artist p-4  rounded-circle'
                             key={i}
-                            src={artist.image.cover_small.url}
+                            src={artist.image.cover.url}
                             alt={artist.fullName}
-
                         />
                     ))
                 }
