@@ -27,7 +27,7 @@ export default function App() {
       <LatestSong />
       <TopDaySong />
       <TopWeekSong /> */}
-      <Player />
+      {/* <Player /> */}
 
     </div>
   );
