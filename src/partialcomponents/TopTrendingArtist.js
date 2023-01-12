@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Carousel, Container, Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import shape from '../images/shape.svg'
-
-
 
 function TopTrendingArtist() {
     const [artists, setArtists] = useState([])
@@ -20,14 +18,11 @@ function TopTrendingArtist() {
     }
     showTrendingArtist()
 
-
     return (
         <div className='container-fluid'>
             <Row className="bg-cards-darkblue justify-content-between flex flex-nowrap overflow-scroll mt-5 w-100">
 
-                <div
-                    className='shape-back'
-                />
+                <div className='shape-back' />
                 <img src={shape}
                     className='shape'
                 />
