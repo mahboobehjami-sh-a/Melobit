@@ -158,6 +158,31 @@ body {
     height: 400px;
 }
 
+.profile-pic {
+
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #FF0057;
+    /* align-items: center; */
+    /* border-style: solid;
+    border-color: #FF0057;
+    border-width: 5px; */
+}
+
+.profile-item {
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.transparent-card {
+    background-color: #001534;
+    border: none;
+    margin-top: 5px;
+}
+
 .text-title {
     font-size: 1.5rem;
     font-weight: 500;
@@ -196,6 +221,10 @@ body {
     font-size: 3rem;
 }
 
+.search-icon-btn {
+    font-size: 2rem;
+}
+
 .icon-size {
     font-size: 1.25rem;
 }
@@ -211,6 +240,50 @@ body {
     font-family: 'Kodchasan';
 }
 
+.search-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #FF0057;
+    border: none;
+}
+
+.search-btn:hover {
+    width: 60px;
+    height: 60px;
+    background-color: #33325B;
+    border: none;
+}
+
 figcaption {
     font-family: 'Roboto';
+}
+
+.search-input {
+    background-color: #001534;
+    border: none;
+    width: 50%;
+    color: white;
+
+}
+
+.search-input:hover {
+    background-color: #001534;
+    border: none;
+    width: 50%;
+
+}
+
+.search-input:focus {
+    background-color: #001534;
+    border: none;
+    outline: none !important;
+    outline: none !important;
+    border: 1px solid #001534;
+    box-shadow: 0 0 10px #001534;
+    color: white;
+
+}
+
+.search-input::placeholder {
+    color: #fdc7d9;
 }
