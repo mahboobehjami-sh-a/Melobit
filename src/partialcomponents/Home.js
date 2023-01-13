@@ -9,6 +9,7 @@ import TopDaySong from "../partialcomponents/TopDaySong";
 import LatestSong from "../partialcomponents/LatestSong";
 import Player from "../partialcomponents/Player";
 import Search from "../partialcomponents/Search";
+import DetailsSong from "../partialcomponents/DetailsSong";
 
 
 export default function Home() {
@@ -21,12 +22,13 @@ export default function Home() {
 
         <div className="">
             <NavbarHead />
+            <DetailsSong />
             {/* <SliderHead />
             <TopTrendingArtist />
             <LatestSong />
             <TopDaySong />
             <TopWeekSong /> */}
-            <Search />
+            {/* <Search /> */}
             {/* <Player /> */}
 
         </div>
