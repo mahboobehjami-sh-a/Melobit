@@ -2,14 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
-
 function TopDaySong() {
     const [songs, setSongs] = useState([])
-
-    useEffect(() => {
-    })
-
     const showTopDaySong = async () => {
         var resultTopWeekSong = await fetch('https://api-beta.melobit.com/v1/song/top/day/0/100')
             .then(Response =>
@@ -20,13 +14,11 @@ function TopDaySong() {
     }
     showTopDaySong()
 
-
     return (
         <div className='container-fluid m-0 p-0 bg-cards'>
             <Container>
                 <Row className=" justify-content-between flex flex-nowrap overflow-scroll mt-5 w-100">
                     <div className=' text-light text-title'>Top 10 Day Song</div>
-
                     {
                         songs.map((song, i) => (
                             <Link to={`detailsong/${song.id}`} className='link-small-card'>
@@ -43,7 +35,6 @@ function TopDaySong() {
                             </Link>
                         ))
                     }
-
                 </Row>
             </Container>
         </div>

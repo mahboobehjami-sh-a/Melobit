@@ -1,14 +1,12 @@
 import '../css/CustomizeStyle.css';
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import melobit from '../images/melobit.svg'
 import melobitlogo from '../images/melobitlogo.svg'
 import { AiOutlineSearch } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
-
 function NavbarHead() {
     return (
-
         <nav className="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
             <a href="/" className="navbar-brand d-flex w-50 mr-auto">
                 <img src={melobitlogo} className='p-2 melobit-icon'></img>
@@ -33,7 +31,6 @@ function NavbarHead() {
                         <Link to="/" className="text-decoration-none nav-link text-secondary font-weight-bold disabled" aria-disabled>History</Link>
                     </li>
                 </ul>
-
                 <ul className="nav navbar-nav ml-auto w-100 justify-content-end ">
                     <li className="nav-item">
                         <Link to="/search">
@@ -46,7 +43,6 @@ function NavbarHead() {
                 </ul>
             </div>
         </nav>
-
     );
 }
 

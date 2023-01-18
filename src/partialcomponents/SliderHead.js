@@ -1,17 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import streamblue from '../images/streamblue.svg'
 import streamwhite from '../images/streamwhite.svg'
 import { BsPlayFill } from "react-icons/bs";
 
-
 function SliderHead() {
     const [sliders, setSliders] = useState([])
-
-    useEffect(() => {
-    })
-
     const showSlider = async () => {
         var resultSlider = await fetch('https://api-beta.melobit.com/v1/song/slider/latest')
             .then(Response =>
@@ -21,9 +16,6 @@ function SliderHead() {
             })
     }
     showSlider()
-
-
-
 
     return (
         <Container>

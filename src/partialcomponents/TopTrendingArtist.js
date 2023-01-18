@@ -4,10 +4,6 @@ import shape from '../images/shape.svg'
 
 function TopTrendingArtist() {
     const [artists, setArtists] = useState([])
-
-    useEffect(() => {
-    })
-
     const showTrendingArtist = async () => {
         var resultTrendingArtist = await fetch('https://api-beta.melobit.com/v1/artist/trending/0/4')
             .then(Response =>
@@ -17,17 +13,14 @@ function TopTrendingArtist() {
             })
     }
     showTrendingArtist()
-
     return (
         <div className='container-fluid'>
             <Row className="bg-cards-darkblue justify-content-between flex flex-nowrap overflow-scroll mt-5 w-100">
-
                 <div className='shape-back' />
                 <img src={shape}
                     className='shape'
                 />
                 <div className='text-show-top text-light'>Top<br />Trending<br /> <span className='text-pink'>Artist</span></div>
-
                 {
                     artists.map((artist, i) => (
                         <img

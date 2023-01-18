@@ -4,16 +4,10 @@ import '../css/CustomizeStyle.css';
 import { AiOutlineSearch } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
-
-
 function Search() {
 
     const [searchInput, setSearchInput] = useState("")
     const [resultsSearch, setResultsSearch] = useState([])
-
-    useEffect(() => {
-    }, [])
-
     const search = async () => {
         var resultSearch = await fetch('https://api-beta.melobit.com/v1/search/query/' + searchInput + '/0/50')
             .then(Response =>
@@ -39,7 +33,6 @@ function Search() {
                         onChange={event => setSearchInput(event.target.value)}
                     >
                     </FormControl>
-
                     <Button className='search-btn rounded-circle' onClick={search}>
                         <AiOutlineSearch className='text-light search-icon-btn' />
                     </Button>
@@ -49,7 +42,6 @@ function Search() {
                 <Row className='mx-2 row row-cols-4'>
                     {resultsSearch.map((artist) => (
                         artist.type === "artist" &&
-
                         <Card className='w-100 m-1 bg-cards'>
                             <div class="d-flex justify-content-center">
                                 <Card.Img className='col-2 profile-pic rounded-circle ' src={artist.artist.image.cover.url} />
@@ -63,12 +55,9 @@ function Search() {
                             <div>
                             </div>
                         </Card>
-
                     ))
                     }
-
                 </Row>
-
                 <Row className='mx-2 row row-cols-4'>
                     {resultsSearch.map((songs) => (
                         songs.type === "song" &&
@@ -83,7 +72,6 @@ function Search() {
                         </Link>
                     ))
                     }
-
                 </Row>
             </Container>
         </div >
