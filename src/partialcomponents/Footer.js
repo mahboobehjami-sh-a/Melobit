@@ -9,9 +9,9 @@ function Footer() {
 
     return (
 
-        <div className='w-100 fixed-bottom player-bottom'>
+        <div className='w-100 fixed-bottom footer-bottom'>
 
-            Mahboobeh Jami & Laya Arianpour
+            Mahboobeh Jami & Laya Arianpour 
 
         </div>
 
