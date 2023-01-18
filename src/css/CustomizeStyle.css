@@ -202,6 +202,16 @@ body {
     height: 460px;
 }
 
+.link-latest-song {
+    width: 420px;
+    height: 500px;
+}
+
+.link-small-card {
+    width: 220px;
+    height: 300px;
+}
+
 .figure-top-day-song {
     /* display: inline; */
     width: 200px;
@@ -209,7 +219,7 @@ body {
 }
 
 .space-bottom {
-    margin-bottom: 140px !important;
+    margin-bottom: 50px !important;
 }
 
 .rounded-img {

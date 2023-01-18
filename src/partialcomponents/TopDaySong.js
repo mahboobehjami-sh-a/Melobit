@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,15 +29,18 @@ function TopDaySong() {
 
                     {
                         songs.map((song, i) => (
-                            <figure className="figure figure-top-day-song ">
-                                <img
-                                    className=" mt-5 p-2 pb-2 figure-img img-fluid rounded-img"
-                                    key={i}
-                                    src={song.album.image.cover.url}
-                                    alt={song.album.name} />
-                                <figcaption className='figure-caption text-center text-light'>{song.album.name}</figcaption>
-                                <figcaption className='figure-caption text-center text-secondary'>{song.album.artists[0].fullName}</figcaption>
-                            </figure>
+                            <Link to={`detailsong/${song.id}`} className='link-small-card'>
+
+                                <figure className="figure figure-top-day-song ">
+                                    <img
+                                        className=" mt-5 p-2 pb-2 figure-img img-fluid rounded-img"
+                                        key={i}
+                                        src={song.album.image.cover.url}
+                                        alt={song.album.name} />
+                                    <figcaption className='figure-caption text-center text-light'>{song.album.name}</figcaption>
+                                    <figcaption className='figure-caption text-center text-secondary'>{song.album.artists[0].fullName}</figcaption>
+                                </figure>
+                            </Link>
                         ))
                     }
 

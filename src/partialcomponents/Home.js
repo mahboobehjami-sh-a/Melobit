@@ -2,14 +2,12 @@ import '../css/Player.css';
 import React, { useState, useEffect } from 'react'
 
 import SliderHead from "../partialcomponents/SliderHead";
-import NavbarHead from "../partialcomponents/Navbar";
 import TopTrendingArtist from "../partialcomponents/TopTrendingArtist";
 import TopWeekSong from "../partialcomponents/TopWeekSong";
 import TopDaySong from "../partialcomponents/TopDaySong";
 import LatestSong from "../partialcomponents/LatestSong";
-import Player from "../partialcomponents/Player";
-import Search from "../partialcomponents/Search";
-import DetailsSong from "../partialcomponents/DetailsSong";
+import Footer from "./Footer";
+
 
 
 export default function Home() {
@@ -21,15 +19,12 @@ export default function Home() {
     return (
 
         <div className="">
-            <NavbarHead />
-            <DetailsSong />
-            {/* <SliderHead />
+            <SliderHead />
             <TopTrendingArtist />
             <LatestSong />
             <TopDaySong />
-            <TopWeekSong /> */}
-            {/* <Search /> */}
-            {/* <Player /> */}
+            <TopWeekSong /> 
+            <Footer />
 
         </div>
     );
