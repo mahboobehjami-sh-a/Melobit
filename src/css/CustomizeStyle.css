@@ -131,6 +131,9 @@ body {
     color: #FF0057;
     font-family: 'Kodchasan';
 }
+.text-github {
+    font-family: 'Kodchasan';
+}
 
 .text-show-top {
     position: absolute;
@@ -300,8 +303,12 @@ figcaption {
 
 /* for details page */
 .detailes-banner {
-    filter: blur(3px);
-    background-image: url('https: //www.google.com/imgres?imgurl=https%3A%2F%2Fst2.depositphotos.com%2F1106005%2F7667%2Fi%2F950%2Fdepositphotos_76673283-stock-photo-black-and-white-music-notes.jpg&imgrefurl=https%3A%2F%2Fdepositphotos.com%2F76673283%2Fstock-photo-black-and-white-music-notes.html&tbnid=LvwDo58cJaiW6M&vet=12ahUKEwirptWVi8T8AhUB67sIHWw-CfAQMygCegUIARDBAQ..i&docid=p_3gczV0cYYCfM&w=1024&h=1024&q=music%20background%20repeated&ved=2ahUKEwirptWVi8T8AhUB67sIHWw-CfAQMygCegUIARDBAQ');
+    filter: blur(2px);
+    border-radius: 20px;
+    width: 1000px;
+    height: 500px;
+
+    /* background-image: url('https: //www.google.com/imgres?imgurl=https%3A%2F%2Fst2.depositphotos.com%2F1106005%2F7667%2Fi%2F950%2Fdepositphotos_76673283-stock-photo-black-and-white-music-notes.jpg&imgrefurl=https%3A%2F%2Fdepositphotos.com%2F76673283%2Fstock-photo-black-and-white-music-notes.html&tbnid=LvwDo58cJaiW6M&vet=12ahUKEwirptWVi8T8AhUB67sIHWw-CfAQMygCegUIARDBAQ..i&docid=p_3gczV0cYYCfM&w=1024&h=1024&q=music%20background%20repeated&ved=2ahUKEwirptWVi8T8AhUB67sIHWw-CfAQMygCegUIARDBAQ'); */
 }
 
 .music-player-card {
@@ -310,25 +317,27 @@ figcaption {
     height: 396px;
     right: 250px;
     /* left: 945px; */
-    top: 236px;
+    top: 180px;
     background: rgba(217, 217, 217, 0.25);
     border-radius: 15px;
 }
 
-.music-player-card img {
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-    padding: 10px;
+.music-player-card-img {
+    width: 300px !important;
+    height: 300px !important;
+    /* border-radius: 200px; */
+    padding: 20px;
+    position: absolute;
+
 }
 
 .seekbar-box {
     position: absolute;
     width: 363.04px;
-    height: 190px;
+    height: 220px;
     right: 250px;
     /* left: 945px; */
-    top: 522px;
+    top: 410px;
     background: rgba(255, 255, 255, 0.21);
     backdrop-filter: blur(12.5px);
     border-radius: 20px;
@@ -344,7 +353,7 @@ figcaption {
     height: 80px;
     right: 250px;
     /* left: 945px; */
-    top: 712px;
+    top: 660px;
     /* background: rgba(255, 255, 255, 0.21); */
     backdrop-filter: blur(12.5px);
     border-radius: 20px;
@@ -379,7 +388,7 @@ figcaption {
 .center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
 }
@@ -394,7 +403,7 @@ figcaption {
     text-align: left;
     color: white;
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
@@ -408,15 +417,15 @@ figcaption {
     text-align: left;
     color: white;
     margin-left: 30px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
 }
 
 .lyrics {
     position: absolute;
     width: 357px;
-    height: 200px;
+    height: 150px;
     left: 155px;
     padding-bottom: 10px;
     /* font-family:; */
@@ -434,7 +443,7 @@ figcaption {
 }
 
 .lyrics p {
-    font-family: 'Kodchasan';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
     font-size: 16px;
     font-weight: 300;
@@ -476,8 +485,18 @@ figcaption {
     margin-left: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .download-quality-btn {
-    width: max-content;
+    width: 227px !important;
     border: none;
     height: 40px;
     color: white;
@@ -495,4 +514,17 @@ figcaption {
 #high {
     width: 145px;
     border-radius: 5px 5px 0 0;
+}
+
+.footer-text {
+    font-size: 2rem;
+}
+
+.footer-bottom {
+    background: #D9D9D952;
+    height: 50px;
+    backdrop-filter: blur(2px);
+    position: relative;
+    bottom: 0;
+    margin: 0;
 }
