@@ -1,11 +1,5 @@
 /* bottom player */
-.footer-bottom {
-    background: #D9D9D952;
-    height: 130px;
-    backdrop-filter: blur(2px);
-    position:relative;
-    bottom: 0;
-}
+
 
 audio {
     width: 300px;
