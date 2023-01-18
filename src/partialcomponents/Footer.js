@@ -11,7 +11,7 @@ function Footer() {
 
         <div className='w-100 fixed-bottom player-bottom'>
 
-            1234567899
+            Mahboobeh Jami & Laya Arianpour
 
         </div>
 
