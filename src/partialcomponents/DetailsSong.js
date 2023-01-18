@@ -7,10 +7,6 @@ import { MdFavoriteBorder } from "react-icons/md";
 function DetailsSong() {
     const parameters = useParams();
     const [songDetails, setSongDetails] = useState([])
-<<<<<<< HEAD
-=======
-    const [song, setSong] = useState("")
->>>>>>> c0195c8a2f6a9ec3aba91119a62ca8600a353769
     const audioref = useRef(null);
 
     useEffect(() => {
